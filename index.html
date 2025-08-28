@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delipostres - Postres Deliciosos en Vasos</title>
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Delipostres</h1>
+                <p>Postres deliciosos en vasos</p>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Descubre el Mundo de los Postres en Vasos</h2>
+                <p>Recetas deliciosas, fáciles de preparar y perfectas para impresionar</p>
+                <a href="#recetas" class="btn">Explorar Recetas</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias" class="categories">
+        <div class="container">
+            <h2>Categorías de Postres</h2>
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="postres-en-vasos">Postres en Vasos</button>
+                <button class="filter-btn" data-category="postres-clasicos">Postres Clásicos</button>
+                <button class="filter-btn" data-category="postres-saludables">Postres Saludables</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="recetas" class="recipes">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar recetas...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div id="recipes-container" class="recipes-grid">
+                <!-- Las vistas previas de recetas se cargarán aquí mediante JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>¿Quieres Más Recetas?</h2>
+            <p>Descubre como hacer las recetas de postres en vasos paso a paso </p>
+            <div class="cta-container">
+                <a href="https://go.hotmart.com/H98086971R?ap=1178" target="_blank" class="cta-btn">¡Consigue Todas Las Recetas Aquí!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Delipostres - Todos los derechos reservados</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para ver detalles de la receta -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="recipe-detail">
+                <!-- Los detalles de la receta se cargarán aquí mediante JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="contenido.js"></script>
+</body>
+</html>
